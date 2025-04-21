@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import ProductDetail  from "../../Components/ProductDetail"
 import Layout from "../../Components/Layout"
 import Card from "../../Components/Card"
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
               })
            }
           </div>
+          <ProductDetail />
         </Layout>
     )
   }
