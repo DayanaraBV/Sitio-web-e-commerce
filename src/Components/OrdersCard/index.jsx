@@ -1,6 +1,7 @@
 import { ChevronRightIcon, CalendarDaysIcon, ShoppingBagIcon } from '@heroicons/react/24/solid'
 const OrdersCard = props => {
     const { totalPrice, totalProducts } = props
+    if (totalPrice === undefined || totalProducts === undefined) return null;
     const currentDate = () => {
         const date = new Date().toLocaleDateString();
         return date
